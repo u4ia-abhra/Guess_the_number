@@ -15,7 +15,7 @@ def game():
             print("Guess is too high, try again")
             c = c + 1
         elif (i == t):
-            print("Congratulations, you guesses the correct number")
+            print("Congratulations, you guessed the correct number")
             c = c + 1
             print("No. of attempts taken = ", c)
             return c
@@ -43,7 +43,7 @@ Enter 3 to Exit
         p2 = game()
         if p1 == p2:
             print("Game tied")
-        elif p1 > p2:
+        elif p1 < p2:
             print("Player 1 won")
         else:
             print("Player 2 won")
